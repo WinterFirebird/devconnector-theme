@@ -1,0 +1,74 @@
+/*                  R E S P O N S I V E                      */
+
+@media screen and (max-width:720px) {
+    html {
+        font-size: 14px;
+    }
+
+    .navbar {
+        position: static;
+        flex-direction: column; 
+        
+        ul {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+    .container {
+
+        .hide-sm {
+            display: none;
+        }
+
+        max-width: 95%;
+        margin: {
+            top:2rem;
+        }
+
+        // .profiles {
+            .profile {
+                grid-template-areas: 
+                "img about"
+                "skills skills"
+                ;
+
+                ul {
+                    justify-self: center;
+                }
+            }
+        // }
+
+        // .post-form {
+        //     .posts {
+                .post {
+                    grid-template-areas:
+                    "author"
+                    "content"
+                    ;
+                    text-align: center;
+                }
+        //     }
+        // }
+
+        .profile-grid {
+            grid-template-areas:
+            "top"
+            "about"
+            "exp"
+            "edu"
+            "github";
+        }
+    }
+
+    .landing {
+        max-width: 100%;
+    }
+}
+
+
+@media screen and (max-width:320px) {
+    html {
+        font-size: 12px;
+    }
+}
